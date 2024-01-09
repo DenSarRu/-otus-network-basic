@@ -1,2 +1,1 @@
-# -otus-network-basic
-Otus. Network Engineer. Basic. Homeworks
+# Otus. Network Engineer. Basic. Homeworks
