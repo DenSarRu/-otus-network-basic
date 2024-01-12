@@ -20,7 +20,7 @@
 
 ### Решение
 
-Файл CPT с полностью настроенным оборудованием [тут](https://github.com/DenSarRu/-otus-network-basic/tree/master/hw_01/lab_01_before remove configuration.pkt)
+Файл CPT с полностью настроенным оборудованием [тут](lab_01.docx)
 
 #### Часть 1. Создание сети и проверка настроек коммутатора по умолчанию
 
