@@ -42,8 +42,7 @@ a. Загрузил следующий конфигурационный скри
   ip dhcp excluded-address 192.168.10.1 192.168.10.9
   ip dhcp excluded-address 192.168.10.201 192.168.10.202
   !
-  ip dhcp pool Students
-  network 192.168.10.0 255.255.255.0
+  ip dhcp pool Students network 192.168.10.0 255.255.255.0
   default-router 192.168.10.1
   domain-name CCNA2.Lab-11.6.1
   !
@@ -52,22 +51,22 @@ a. Загрузил следующий конфигурационный скри
   !
   interface GigabitEthernet0/0/1
   description Link to S1
-  ip dhcp relay information trusted
-  ip address 192.168.10.1 255.255.255.0
+  ip dhcp relay information trusted ip address 192.168.10.1 255.255.255.0
   no shutdown
   !
   line con 0
   logging synchronous
   exec-timeout 0 0
 
-b. Проверил текущую конфигурацию на **R1**, используя следующую команду
-  
+b. Проверил текущую конфигурацию на R1, используя следующую команду
+
   R1# show ip interface brief
-  Interface              IP-Address      OK? Method Status                Protocol
-  GigabitEthernet0/0/0   unassigned      YES NVRAM  administratively down down
-  GigabitEthernet0/0/1   192.168.10.1    YES manual up                    down
-  Loopback0              10.10.1.1       YES manual up                    up
-  Vlan1                  unassigned      YES unset  administratively down down
+  Interface IP-Address OK? Method Status Protocol
+  GigabitEthernet0/0/0 unassigned YES NVRAM administratively down down
+  GigabitEthernet0/0/1 192.168.10.1 YES manual up down
+  Loopback0 10.10.1.1 YES manual up up
+  Vlan1 unassigned YES unset administratively down down
+
 
 c. Убедился, что IP-адресация и интерфейсы находятся в состоянии up/up.
 
