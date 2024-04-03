@@ -240,6 +240,8 @@ b. На **S1** включил защиту порта на F0 / 6 со след�
 - Aging time: **60 мин**.
 - Aging type: **неактивный**
 
+Комманды:
+
     S1(config)#int fa0/6
     S1(config-if)#sw port-security
     S1(config-if)#switchport port-security maximum 3
@@ -283,6 +285,8 @@ e. Настроил следующие параметры безопасност
 - Максимальное количество записей MAC-адресов: 2
 - Тип безопасности: Protect
 - Aging time: 60 мин.
+
+Комманды:
 
     S2(config-if)#sw port-security maximum 2
     S2(config-if)#sw port-security violation protect
